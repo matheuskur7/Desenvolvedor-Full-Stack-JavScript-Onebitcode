@@ -5,7 +5,7 @@ let continua = true
 while(continua == true) {
     let opcao = Number(window.prompt(`Baralho:\n${baralho} \n\nEscolha uma opção:\n[1] Adicionar carta\n[2] Retirar carta\n[3] Sair`))
     if (baralho.length > 10) {
-        window.alert("A que ponto chegamos???")
+        window.alert("A que ponto chegamos???'")
     }
     switch(opcao) {
         case 1:
