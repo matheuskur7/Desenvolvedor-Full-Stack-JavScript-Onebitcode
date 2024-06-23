@@ -49,7 +49,6 @@ function adicionaItem() { // Função responsável por adicionar um novo item ao
 
 //====================================================================================================================// removeItem()
 
-
 function removeItem() { // Função responsável por remover um item do orçamento
     console.log('REMOVENDO...')
     let indexRemove = Number(window.prompt( // Pergunta ao usuário qual item deseja remover do orçamento
@@ -57,20 +56,13 @@ function removeItem() { // Função responsável por remover um item do orçamen
         orcamento + "\n\n" +
         'Digite o índice do item a ser removido do orçamento:'        
     ))
+    
     if(indexRemove < dataBase.length) {
-        let dataBaseTemp = [] // Cria uma base de dados temporária apenas para armazenar todos os itens que não serão removidos
-        for(let i = 0; i < dataBase.length; i ++) {
-            if(i != indexRemove) {
-                dataBaseTemp.push({nome:dataBase[i].nome, valor:dataBase[i].valor, qtd:dataBase[i].qtd})
-                // Adiciona o item à base de dados temporária se ele não for o que o usuário escolheu para remover
-            }
-        }
-        dataBase = dataBaseTemp // Pega a base de dados do orçamento e a atualiza, sem o item que o usuário escolheu remover
+        dataBase.splice(indexRemove, 1) // Remove 1 elemento à partir da posição armazenada em "indexRemove"
     } else {
         window.alert(`O item ${indexRemove} não existe no orçamento...`)
     }
 }
-
 
 //====================================================================================================================// editaItem()
 
@@ -81,9 +73,9 @@ function editaItem() { // Função responsável por remover um item do orçament
         'Digite o índice do item que deseja editar:'
     ))
 
-    let editParameter // Declaração da variável
-
     if(indexEdit < dataBase.length) { // Testa se o índice escolhido pelo usuário existe no orçamento
+        let editParameter // Declaração da variável
+
         do {
             editParameter = Number(window.prompt( //Armazena qual parâmetro o usuário quer editar na variável
                 'Selecione o parâmetro que deseja editar ou digite 4 para sair:\n\n' +
