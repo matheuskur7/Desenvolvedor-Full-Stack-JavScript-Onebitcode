@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fort de France - Orçamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ORÇAMENTO Nº ---</h1>
+    <hr>
+    <section id="orcamento-cabecalho">
+        <h2 class="vehicle-data" id="marca"><label for="manufacturer">Marca: </label><input type="text" name="manufacturer" id="manufacturer"></h2>
+        <h2 class="vehicle-data"><label for="model">Modelo: </label><input type="text" name="model" id="model"></h2>
+    </section>
+    <section id="orcamento-corpo">
+        <button onclick="addItem()" style="padding: 10px; margin: 10px 0;">Adicionar Linha</button>
+
+        <table id="orcamento-itens">
+            <thead>
+                <tr>
+                    <th scope="col" id="item">Item</th>
+                    <th scope="col">Qtd</th>
+                    <th scope="col">Custo</th>
+                    <th scope="col">Venda</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
