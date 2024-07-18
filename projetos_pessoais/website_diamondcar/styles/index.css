@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap');
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+:root {
+    --brand-dark-blue: #1d2843;
+    --brand-blue: #4c6ab4;
+    --brand-red: #e63c4e;
+    --brand-dark-red: #bc1622;
+}
+
+html ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  html ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--brand-blue);
+  }
+  
+  html ::-webkit-scrollbar-track {
+    background: #ededed;
+  }
+
+html, a {
+    font-family: "Hind Vadodara", sans-serif;
+    text-decoration: none;
+    color: var(--brand-dark-blue);
+    overflow-x: hidden;
+    width: 100vw;
+    height: auto;
+    scroll-behavior: smooth;
+}
+
+#top-bar, main {
+    width: 1400px;
+    max-width: 96%;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+}
+
+main {
+    width: 1500px;
+}
+
+main {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    padding-top: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.253);
+}
+
+#top-bar {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+header {
+    background-color: white;
+
+}
+#top-bar img {
+    padding: 1px;
+    padding-left: 10px;
+    height: 92%;
+}
+
+#contact svg {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: 85px;
+    transform: translate(-250px,-5px);
+    fill: var(--brand-dark-blue);
+}
+
+#social table {
+    position: absolute;
+    border-collapse: collapse;
+    border: none;
+    transform: translate(-200px, -7px);
+}
+
+#social th, #social td {
+    height: 40px;
+    margin: 0;
+}
+
+#social td * {
+    color: white;
+    font-size: 1.2em;
+}
+
+#social #whatsapp-row {
+    transform: translateY(10px);
+    vertical-align: top;
+}
+
+#social img {
+    height: 30px;
+}
+
+#social #insta-row {
+    transform: translate(-20px, -10px);
+    vertical-align: top;
+}
+
+#social #instagram-logo {
+    transform: translate(-1px, -1px);
+    height: 34px;
+}
+
+#nav-bar {
+    margin: auto;
+    display: flex;
+}
+
+#nav-bar ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#nav-bar li {
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--brand-dark-blue);
+    font-size: 1.2em;
+    width: 120px;
+}
+
+#nav-bar li:hover {
+    color: var(--brand-blue);
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+#apresentacao {
+    margin-top: 90px;
+    padding: 10px;
+    text-align: center;
+}
+
+#apresentacao svg {
+    height: 120px;
+}
+
+#apresentacao p {
+    font-size: 1.4em;
+    margin: 20px 0 0 0;
+    color: var(--brand-dark-blue);
+    line-height: 0em;
+}
+
+#apresentacao h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: var(--brand-blue);
+}
+
+#cars-background {
+    height: 500px;
+    margin-top: -120px;
+    background-image: url(../images/fundo-diamondcar.png);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+#especializations {
+    text-align: center;
+    line-height: .9em;
+    margin: -50px auto 150px auto
+}
+
+#especializations h1 {
+    font-size: 2.3em;
+    color: var(--brand-dark-blue);
+}
+
+#especializations h2 {
+    color: var(--brand-blue);
+    font-size: 2em;
+}
+
+#especializations img {
+    width: 150px;
+}
+
+#nossos-servicos {
+    margin-top: -100px;
+    background-color: var(--brand-dark-blue);
+    padding: 20px 0;
+    color: white;
+    background-image: url(../images/our-services-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+}
+
+#nossos-servicos > h1, #nossos-servicos > p {
+    text-align: center;
+    line-height: .4em;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.411);
+}
+
+#nossos-servicos h1 {
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+#nossos-servicos article {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.411);
+}
+
+#nossos-servicos article div {
+    margin: 0 120px;
+    width: 170px;
+}
+
+#nossos-servicos img {
+    filter: brightness(1000%);
+}
+
+.button-orcamento {
+    text-align: center;
+    margin: auto;
+    height: 60px;
+}
+
+.button-orcamento span {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.button-orcamento a {
+    color: var(--brand-dark-blue);
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.473)
+}
+
+.button-orcamento a:hover {
+    color: white;
+    background-color: var(--brand-blue);
+    box-shadow: 0 0 15px var(--brand-blue);
+    transition-duration: .2s;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+#a-diamond h1 {
+    font-size: 3em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    font-weight: lighter;
+}
+
+#a-diamond #quem-somos-nos {
+    width: 950px;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.1em;
+    padding-bottom: 50px;
+}
+
+#a-diamond #certificados {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: auto;
+    width: 90%;
+}
+
+#a-diamond #certificados img {
+    min-width: 150px;
+    height: 200px;
+    object-fit: scale-down;
+    margin: auto;
+}
+
+#como-chegar h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: lighter;
+    margin: 30px 0 0 0;
+}
+
+#como-chegar iframe {
+    width: 90%;
+    height: 600px;
+    position: relative;
+    margin: 20px auto;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+    z-index: 0;
+}
+
+footer {
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.459);
+    margin: -20px -10px -20px -10px;
+    width: 100vw;
+    background-color: white;
+}
+
+.shadow {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.315);
+}
