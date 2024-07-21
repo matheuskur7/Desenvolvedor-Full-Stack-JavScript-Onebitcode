@@ -1,6 +1,8 @@
 <det nItem="1">
     <prod>
-        <cProd>MF-15511</cProd><cEAN>7898134044327</cEAN><xProd>RES.RAD.PEUGEOT 206/207 1.4/1.</xProd>
+        <cProd>MF-15511</cProd>
+        <cEAN>7898134044327</cEAN>
+        <xProd>RES.RAD.PEUGEOT 206/207 1.4/1.</xProd>
         <NCM>87089100</NCM>
         <CEST>0107500</CEST>
         <cBenef>RS052427</cBenef>
