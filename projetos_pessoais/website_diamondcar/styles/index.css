@@ -300,18 +300,24 @@ header {
     padding-bottom: 50px;
 }
 
-#a-diamond #certificados {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    margin: auto;
+.carrossel {
+    overflow: hidden;
     width: 90%;
+    margin: auto;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
 }
 
-#a-diamond #certificados img {
-    min-width: 150px;
-    height: 200px;
-    object-fit: scale-down;
-    margin: auto;
+.container {
+    display: flex;
+    transition: transform .5s ease-in-out;
+    transform: translateX(0);
+}
+
+.container img {
+    height: 500px;
+    width: auto;
+    margin: 10px;
 }
 
 #como-chegar h1 {
