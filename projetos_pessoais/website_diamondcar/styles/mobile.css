@@ -18,7 +18,7 @@
 }
 
 html ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   
 html ::-webkit-scrollbar-thumb {
@@ -42,53 +42,24 @@ html, a {
 
 #top-bar, main {
     width: 1400px;
-    max-width: 96%;
-    margin: auto;
+    max-width: 100vw;
+    margin: 0;
+    margin-left: -7px;
     overflow: hidden;
     background-color: white;
-}
-
-main {
-    width: 1500px;
-}
-
-main {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
-}
-
-header {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    padding-top: 5px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.253);
 }
 
 #top-bar {
     display: flex;
-    height: 100%;
-    overflow: hidden;
 }
-header {
-    background-color: white;
 
+#top-bar #nav-bar, #top-bar svg {
+    display: none;
 }
+
 #top-bar img {
-    padding: 1px;
-    padding-left: 10px;
-    height: 92%;
-}
-
-#contact svg {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    height: 85px;
-    transform: translate(-240px,-5px);
-    fill: var(--brand-dark-blue);
+    height: 60px;
+    margin: auto;
 }
 
 #social table {
@@ -104,7 +75,7 @@ header {
 }
 
 #social td * {
-    color: white;
+    color: var(--brand-dark-blue);
     font-size: 1.2em;
 }
 
@@ -127,86 +98,49 @@ header {
     height: 34px;
 }
 
-#nav-bar {
-    margin: auto;
-    display: flex;
+main {
+    width: 1500px;
 }
 
-#nav-bar ul {
-    display: flex;
-    list-style: none;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#nav-bar li {
-    padding: 10px;
-    text-align: center;
-    font-weight: bolder;
-    color: var(--brand-dark-blue);
-    font-size: 1.2em;
-    width: 120px;
-}
-
-#nav-bar li:hover {
-    color: var(--brand-blue);
-    cursor: pointer;
-    transition-duration: .3s;
+main {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
 }
 
 #apresentacao {
-    margin-top: 90px;
-    padding: 10px;
+    font-size: 1.2em;
+    line-height: 1em;
     text-align: center;
-}
-
-#apresentacao svg {
-    height: 120px;
+    margin-bottom: 100px;
 }
 
 #apresentacao p {
-    font-size: 1.4em;
-    margin: 20px 0 0 0;
-    color: var(--brand-dark-blue);
-    line-height: 0em;
+    max-width: 95%;
+    margin: 40px auto 0 auto;
 }
 
-#apresentacao h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: var(--brand-blue);
-}
-
-#cars-background {
-    height: 500px;
-    margin-top: -120px;
-    background-image: url(../images/fundo-diamondcar.png);
-    background-position: top center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-}
 
 #especializations {
     text-align: center;
-    line-height: .9em;
+    line-height: 2em;
     margin: -50px auto 150px auto
 }
 
 #especializations h1 {
-    font-size: 2.3em;
+    font-size: 5vw;
     color: var(--brand-dark-blue);
+    max-width: 95%;
+    margin: -20px auto;
+    text-align: center;
 }
 
 #especializations h2 {
     color: var(--brand-blue);
-    font-size: 2em;
+    font-size: 1.8em;
+    font-weight: lighter;
 }
 
 #especializations img {
-    width: 150px;
+    width: 20%;
 }
 
 #nossos-servicos {
@@ -224,12 +158,12 @@ header {
 #nossos-servicos > h1, #nossos-servicos > p {
     text-align: center;
     line-height: .4em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.411);
 }
 
 #nossos-servicos h1 {
-    font-size: 3em;
+    font-size: 1.8em;
     font-weight: lighter;
 }
 
@@ -247,8 +181,8 @@ header {
 }
 
 #nossos-servicos article div {
-    margin: 0 120px;
-    width: 170px;
+    margin: 0 40px;
+    width: 100px;
 }
 
 #nossos-servicos img {
@@ -286,17 +220,19 @@ header {
 }
 
 #a-diamond h1 {
-    font-size: 3em;
+    font-size: 1.9em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.24);
+    line-height: 1em;
     text-align: center;
     font-weight: lighter;
 }
 
 #a-diamond #quem-somos-nos {
     width: 950px;
+    max-width: 90%;
     margin: auto;
     text-align: justify;
-    font-size: 1.1em;
+    font-size: 1em;
     padding-bottom: 50px;
 }
 
@@ -322,14 +258,14 @@ header {
 
 #como-chegar h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 1.8em;
     font-weight: lighter;
-    margin: 30px 0 0 0;
+    margin: 60px 0 0 0;
 }
 
 #como-chegar iframe {
     width: 90%;
-    height: 600px;
+    height: 400px;
     position: relative;
     margin: 20px auto;
     left: 50%;
