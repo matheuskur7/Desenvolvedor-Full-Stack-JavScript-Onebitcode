@@ -72,10 +72,12 @@ header {
     height: 100%;
     overflow: hidden;
 }
+
 header {
     background-color: white;
 
 }
+
 #top-bar img {
     padding: 1px;
     padding-left: 10px;
@@ -91,38 +93,38 @@ header {
     fill: var(--brand-dark-blue);
 }
 
-#social table {
+#social-desktop table {
     position: absolute;
     border-collapse: collapse;
     border: none;
     transform: translate(-200px, -7px);
 }
 
-#social th, #social td {
+#social-desktop th, #social-desktop td {
     height: 40px;
     margin: 0;
 }
 
-#social td * {
+#social-desktop td * {
     color: white;
     font-size: 1.2em;
 }
 
-#social #whatsapp-row {
+#social-desktop #whatsapp-row {
     transform: translateY(10px);
     vertical-align: top;
 }
 
-#social img {
+#social-desktop img {
     height: 30px;
 }
 
-#social #insta-row {
+#social-desktop #insta-row {
     transform: translate(-20px, -10px);
     vertical-align: top;
 }
 
-#social #instagram-logo {
+#social-desktop #instagram-logo {
     transform: translate(-1px, -1px);
     height: 34px;
 }
