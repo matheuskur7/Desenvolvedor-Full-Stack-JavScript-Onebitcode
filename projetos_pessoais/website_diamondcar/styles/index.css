@@ -144,12 +144,11 @@ header {
 }
 
 #nav-bar li {
-    padding: 10px;
+    padding: 10px 10px;
     text-align: center;
     font-weight: bolder;
     color: var(--brand-dark-blue);
-    font-size: 1.2em;
-    width: 120px;
+    font-size: 1.1em;
 }
 
 #nav-bar li:hover {

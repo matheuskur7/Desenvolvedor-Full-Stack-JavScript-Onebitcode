@@ -19,6 +19,13 @@
 
 html {
   font-family: "Hind Vadodara", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+main {
+  width: 97vw;
+  overflow-x: hidden;
 }
 
 #top-bar {
@@ -92,7 +99,7 @@ html {
   background-color: var(--brand-dark-blue);
   width: 100vw;
   margin-top: 20px;
-  margin-left: -6px;
+  margin-left: -18px;
   padding: 3px;
   color: white;
   text-align: center;
@@ -115,9 +122,85 @@ html {
   width: 80px;
 }
 
+#a-diamond {
+  color: var(--brand-dark-blue);
+}
+
+#a-diamond h1 {
+  font-size: 1.9em;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 1.1em;
+}
+
+#a-diamond p {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 1.2em;
+  width: 90vw;
+  margin: auto;
+}
+
+.carrossel {
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+  box-shadow: 1px 1px 5px gray;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  transition: transform .5s ease-in-out;
+  transform: translateX(0);
+}
+
+.carrossel img {
+  height: 300px;
+  margin: auto;
+}
+
+.carrossel #img1 {
+  height: 205px;
+}
+ 
+#como-chegar {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+#como-chegar h1 {
+  color: var(--brand-dark-blue);
+  text-align: center;
+  font-weight: lighter;
+}
+
 iframe {
   width: 90vw;
-  max-width: 15vw;
+  height: 300px;
+  max-width: 95vw;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.164);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.288);
+  height: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 95vw;
+  margin-top: 10px;
+  margin-left: -6px;
+  bottom: -20px;
+  overflow: hidden;
+  color: var(--brand-blue);
 }
 
 .shadow {

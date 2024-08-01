@@ -1,5 +1,6 @@
 const imgs = document.getElementById("img")
 const img = document.querySelectorAll("#img img")
+var windowWidth = window.innerWidth;
 
 let idx = 0;
 
@@ -14,4 +15,7 @@ function carrossel() {
     console.log(img[idx].width)
 }
 
-setInterval(carrossel, 1800)
+if(screen.width > 1099) {
+}
+setInterval(carrossel, 2500)
+
